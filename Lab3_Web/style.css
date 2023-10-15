@@ -1,0 +1,367 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.font-text{
+    font-size: 13px;
+}
+
+
+/* .col{
+  
+ 
+}
+.half-col{
+    width: 50%;
+} */
+.clear{
+    clear: both;
+}
+
+/* NAV */
+
+.container-nav {
+   
+    top: 0;
+    left: 0;
+    right: 0;
+    height:  46px;
+    background-color: #eeeeee;
+    border-left: 6px solid #8c0001;
+    border-bottom:  2px solid #8c0001;
+
+}
+.nav{
+    
+    display: inline-block;
+}
+#nav, .subnav{
+  
+    list-style-type: none;
+ 
+}
+
+#nav > li{
+    display: inline-block;
+}
+#nav  li{
+ 
+   
+    position: relative;
+}
+#nav > li > a{
+    color: #000;
+}
+#nav  li  a{
+
+    text-decoration: none;
+    line-height: 46px;
+    /* text-align: center; */
+    padding: 0 24px;
+    /* không có  line này thì hover không full được line-height: ; */
+    display: inline-block; 
+}
+    
+
+#nav .subnav{
+  /* (1) */
+  display: none;
+  position: absolute;
+  left: 0%;
+  top: 100%;
+  min-width: 180px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#nav .subnav a{
+    color: #000;
+}
+
+#nav  li:hover .subnav{
+    display: block;
+}
+#nav > li:hover > a,
+#nav  .subnav li:hover{
+    color: #fff ;
+    background-color: #8c0001;
+}
+
+/* FORM */
+.form-contact{
+    height: 600px;
+    width: 600px;
+    border: 9px solid grey;
+    margin-left: auto;
+    margin-right: auto;
+}
+.head-contact{
+   font-style: b ;
+}
+
+.head-contact{
+    font-size: 28px;
+    text-align: center;
+ 
+    margin: 30px 0;
+}
+.form-input{
+    /* width: 536px; */
+    width:90%;
+    height: 68px;
+    background-color: #f7f7f7;
+    margin: 13px 19px;
+    border-radius: 12px;
+    opacity: 1px;
+    border: 1px solid #ccc;
+}
+.text{
+    display:block;
+    font-size: 11px;
+    /* margin: 10px 15px; */
+    padding-top: 9px;
+    margin-left: 20px;
+    margin-bottom: 12px;
+}
+
+/* .contact {
+    display: flex; 
+    padding: 0 19   px;
+}
+
+.contact > .form-input {
+    flex: 1;
+    margin-right: 10px; 
+
+}
+.contact {
+    flex-direction: row;
+} */
+.col2{
+    margin-left: 13px;
+    margin-right: 41px;
+}
+
+.contact{
+    display: flex;
+}
+.btn-submit {
+    width: 90%;
+    height: 35px;
+    margin: 15px 18px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 25px;
+}
+.form-control{
+    margin-left: 20px;
+    border: none;
+    background-color: #f7f7f7;
+}
+.input-mess{
+    background-color: #fff;
+    height: 110px;
+}
+.text-input-mess{
+    background-color: #fff;
+}
+
+
+/* Form login */
+#login{
+    position: relative;
+    
+    padding-top: 35%;
+    width: 44%;
+    margin-left: auto;
+    margin-right: auto;
+  
+    background: url('./backround-form.jpg') top center / cover no-repeat;
+}
+.form-login{
+    position: absolute;
+    top:75px;
+    background-color: #fff;
+    height:510px;
+    width: 270px;
+    margin-left: 35%;
+}
+.text-header {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 550;
+}
+input.input-login {
+    width: 80%;
+    margin: 5px 23px;
+    height: 50px;
+    border-radius: 9px;
+    border: 1px solid #ccc;
+    padding: 12px;
+    font-weight: 600;
+}
+.input-login:hover{
+    cursor: pointer;
+}
+.btn-login {
+    height: 30px;
+    width: 110px;
+    /* text-align: center; */
+    margin-top: 20px;
+    margin-left: 29%;
+    margin-bottom: 50px;
+    background-color: #bc59d7;
+    color: #fff;
+    border-radius: 14px;
+    border: none;
+}
+.text-hint {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ccc;
+}
+.list-icon-hint{
+    text-align: center;
+    
+}
+.social {
+    margin: 0 2px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 18px;
+}
+.btn-sign-up {
+    margin-top: 70px;
+    margin-left: 42%;
+    border: none;
+    background-color: #fff;
+}
+
+/* FORM ACCOUNT */
+.text-green{
+    color: #7ed320;
+    font-weight: 600;
+}
+.back-color{
+    background-color: #f9f9f9;
+}
+.form-account{
+    width: 800px;
+    border: 15px solid #ccc;
+    margin-left: auto;  
+    margin-right: auto;
+    height: 800px;
+}
+.text1{
+    color: #7ed320;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-bottom: 16px;
+}
+.input-account{
+    border: 1px solid #ccc;
+    width: 88%;
+    height: 45px;
+    margin: 16px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.icon-input{
+    padding: 13px 15px;
+    /* margin-bottom: 53px; */
+    display: inline-block;
+}
+.input-section{
+    border: none;
+    border-left: 1px solid #ccc;
+    height: 30px;
+    padding: 0px 16px;
+}
+.text2,
+.text4,
+.text5{
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 16px;
+ 
+}
+.text3{
+    margin-left:266px;
+}
+.infor{
+    margin-left: 40px;
+}
+.input-date{
+    width: 90px;
+    height: 75px;
+    padding: 0 19px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+}
+.input-year{
+    margin-right: 31px;
+}
+.input-sex{
+    padding: 0 62px;
+    width: 175px;
+    height: 75px;
+    margin-left: -5px;
+    border: 1px solid #ccc;
+    
+}
+.pay{
+    margin-left: 48px;
+}
+.bnt-pay {
+    width: 342px;
+    margin-left: -5px;
+    height: 55px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ccc;
+}
+.pay-credit{
+    background-color: #7ed320;
+    color: #fff;
+    border: none;
+}
+.infor-pay{
+    display: flex;
+}
+.card-cvc{
+    border: 1px solid #ccc;
+    width: 44%;
+    height: 45px;
+  
+    margin: 0 15px 0 44px;
+    
+}
+.select-dm{
+    width: 168px;
+    margin-left: -5px;
+    height: 46px;
+    padding: 0 10px;
+    /* font-size: 14px; */
+    font-weight: 600;
+    color: #000;
+    border: 1px solid #ccc;
+}
+.container{
+    display: flex;
+}
+input.check-box {
+    margin-left: 41px;
+    margin-right: 14px;
+}
+p.text6 {
+    margin-top: 20px;
+    width: 660px;
+    color: #ccc;
+    font-weight: 600;
+}
