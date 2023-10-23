@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab3-Web</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./themify-icons/themify-icons.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- NAV -->
+    <div class="container-nav">
+        <ul id="nav">
+            <li><a href="#">HOME</a></li>
+            <li>
+                <a href="">PRODUCTS</a>
+                <ul class="subnav">
+                    <li><a href="#">Tivi</a></li>
+                    <li><a href="#">Máy tính xách tay</a></li>
+                </ul>
+            </li>
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="">CONTACT</a></li>
+        </ul>
+    </div>
+    <!-- END NAV -->
+
+    <!-- FORM -->
+    <br><br><br>
+    <form action="" class="form-contact" id="myForm">
+        <p class="head-contact"> <b>Contact Us</b></p>
+
+        <div class="form-input">
+            <label class="text text-name " for="name">FULL NAME*</label>
+            <input type="text" id="name" name="full name" placeholder="Enter Your Name" required class="form-control">
+            <span class="error" id="nameError"></span>
+        </div>
+
+        <div class="contact">
+            <div class="form-input col  ">
+                <label class="text text-email  half-col" for="email">EMAIL*</label>
+                <input type="email" id="email " name="" placeholder="Enter your Email" required class="form-control">
+                <span class="error" id="emailError"></span>
+            </div>
+
+            <div class="form-input col2  ">
+                <label class="text text-phone" for="phone">PHONE</label>
+                <input type="number" id="phone" name="" placeholder="Enter Number Phone" required class="form-control">
+                <span class="error" id="phoneError"></span>
+            </div>
+        </div>
+
+        <div class="form-input">
+            <label class="text text-service" for="services">NEEDED SERVICES*</label>
+            <select id="services" name="services" class="form-control">
+                <option value="">Please choose</option>
+                <option value="Software Development">Software Development</option>
+                <option value="System Integration">System Integration</option>
+                <option value="Network Management">Network Management</option>
+                <option value="Cybersecurity">Cybersecurity</option>
+            </select>
+            <span class="error" id="servicesError"></span>
+        </div>
+
+        <div class="form-input input-mess">
+            <label class="text text-message" for="message">MESSAGE</label>
+            <input type="text" id="message" name="" placeholder="Your message here..." required class="form-control text-input-mess">
+            <span class="error" id="messageError"></span>
+        </div>
+
+        <button class="btn-submit">
+            <p>Submit <i class="ti-arrow-right"></i></p>
+        </button>
+    </form>
+    <br><br><br><br><br>
+    <!-- END FORM -->
+     <!-- FORM LOGIN -->
+     <div id="login">
+        <div class="form-login" id="loginForm">
+            <div class="text-header">Sign in</div>
+            <input type="text" placeholder="username or email" class="input-login" id="loginUsername">
+            <input type="password" placeholder="password" class="input-login" id="loginPassword">
+            <button class="btn-login" id="loginButton">SIGN IN</button>
+            <p class="text-hint">Or login with</p>
+            <div class="list-icon-hint">
+                <i class="ti-facebook social"></i>
+                <i class="ti-google social"></i>
+            </div>
+            <button class="btn-sign-up">Sign up</button>
+        </div>
+    </div>
+ <br><br><br><br><br>
+    <!-- FORM ACCOUNT -->
+    <div class="form-account" id="accountForm">
+        <div class="text1 text-green">Account</div>
+        <div class="name input-account back-color">
+            <i class="ti-user icon-input"></i>
+            <input type="text" class="input-section back-color input-name" placeholder="Full name" id="accountName">
+        </div>
+        <div class="mail input-account back-color">
+            <i class="ti-email icon-input"></i>
+            <input type="email" class="input-section back-color input-mail" placeholder="Email Address" id="accountEmail">
+        </div>
+        <div class="password input-account back-color">
+            <i class="ti-key icon-input"></i>
+            <input type="password" class="input-section back-color input-password" placeholder="Password" id="accountPassword">
+        </div>
+        <div class="text-infor">
+            <div class="text2 text-green">Date of Birth <span class="text3 text-green">Gender</span></div>
+        </div>
+
+        <div class="infor">
+            <input type="text" class="input-date input-day" placeholder="DD" id="accountDay">
+            <input type="text" class="input-date input-month" placeholder="MM" id="accountMonth">
+            <input type="text" class="input-date input-year" placeholder="YYY" id="accountYear">
+            <input type="text" class="input-sex" placeholder="Male" id="accountMale">
+            <input type="text" class="input-sex" placeholder="Female" id="accountFemale">
+        </div>
+        <div class="text4 text-green">Payment Details</div>
+        <div class="pay">
+            <button class="pay-credit bnt-pay">
+                <img src="./img-visa.jpg" alt="" width="9%">
+                <span>Credit Card</span>
+            </button>
+            <button class="pay-pal bnt-pay">
+                <img src="./img-paypal.jpg" alt="" width="8%">
+                <span>Paypal</span>
+            </button>
+        </div>
+
+        <div class="card-number input-account back-color">
+            <i class="ti-credit-card icon-input"></i>
+            <input type="text" class="input-card-number input-section back-color" placeholder="Card Number" id="accountCardNumber">
+        </div>
+        <div class="infor-pay">
+            <div class="card-cvc back-color">
+                <i class="ti-user icon-input"></i>
+                <input type="text" class="inut-card-cvc input-section back-color" placeholder="Card-CVC" id="accountCardCVC">
+            </div>
+
+            <select name="" class="day-month select-dm back-color" id="accountExpiryMonth">
+                <option value="">01 Jan</option>
+                <option value="02 Jan">02 Jan</option>
+                <option value="03 Jan">03 Jan</option>
+                <option value="04 Jan">04 Jan</option>
+                <option value="05 Jan">05 Jan</option>
+                <option value="06 Jan">06 Jan</option>
+                <option value="07 Jan">07 Jan</option>
+                <option value="08 Jan">08 Jan</option>
+                <option value="09 Jan">09 Jan</option>
+            </select>
+            <select name="" class="year select-dm back-color" id="accountExpiryYear">
+                <option value="">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2017</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+            </select>
+        </div>
+        <p class="text5 text-green">Terms and Conditions</p>
+        <label class="container">
+            <input type="checkbox" checked="checked" class="check-box" id="accountTerms">
+            <span>
+                <p class="text6">I accept the terms and conditions for signing up to the service, and hereby confirm I have read the private policy.</p>
+            </span>
+        </label>
+    </div>
+    <br><br><br>
+
+    <script>
+        $(document).ready(function () {
+            $('#myForm').submit(function (e) {
+                var name = $('#name').val().trim();
+                var email = $('#email').val().trim();
+                var phone = $('#phone').val().trim();
+                var services = $('#services').val();
+                var message = $('#message').val().trim();
+                var valid = true;
+
+                if (name === "") {
+                    $('#nameError').text('Vui lòng nhập tên.');
+                    $('#name').addClass('error');
+                    valid = false;
+                } else {
+                    $('#nameError').text('');
+                    $('#name').removeClass('error');
+                }
+
+                if (email === "" || !isValidEmail(email)) {
+                    $('#emailError').text('Vui lòng nhập một địa chỉ email hợp lệ.');
+                    $('#email').addClass('error');
+                    valid = false;
+                } else {
+                    $('#emailError').text('');
+                    $('#email').removeClass('error');
+                }
+
+                if (phone === "") {
+                    $('#phoneError').text('Vui lòng nhập số điện thoại.');
+                    $('#phone').addClass('error');
+                    valid = false;
+                } else {
+                    $('#phoneError').text('');
+                    $('#phone').removeClass('error');
+                }
+
+                if (services === "") {
+                    $('#servicesError').text('Vui lòng chọn dịch vụ cần thiết.');
+                    $('#services').addClass('error');
+                    valid = false;
+                } else {
+                    $('#servicesError').text('');
+                    $('#services').removeClass('error');
+                }
+
+                if (message === "") {
+                    $('#messageError').text('Vui lòng nhập tin nhắn.');
+                    $('#message').addClass('error');
+                    valid = false;
+                } else {
+                    $('#messageError').text('');
+                    $('#message').removeClass('error');
+                }
+
+                if (!valid) {
+                    e.preventDefault();
+                }
+            });
+
+            function isValidEmail(email) {
+                var emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
+                return emailRegex.test(email);
+            }
+        });
+        $(document).ready(function () {
+            // Sign in form validation
+            $('#loginButton').click(function () {
+                var username = $('#loginUsername').val().trim();
+                var password = $('#loginPassword').val().trim();
+                var valid = true;
+
+                if (username === "") {
+                    alert('Please enter a valid username or email.');
+                    valid = false;
+                }
+
+                if (password === "") {
+                    alert('Please enter a valid password.');
+                    valid = false;
+                }
+
+                if (valid) {
+                    // Perform sign-in logic here
+                }
+            });
+
+            // Account creation form validation
+            $('#accountTerms').change(function () {
+                var isChecked = $(this).is(":checked");
+                if (!isChecked) {
+                    alert('You must accept the terms and conditions to sign up.');
+                }
+            });
+
+            $('#accountForm input, #accountForm select').focusout(function () {
+                var value = $(this).val().trim();
+                if (value === "") {
+                    alert('Please fill in all required fields.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

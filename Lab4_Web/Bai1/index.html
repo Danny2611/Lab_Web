@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" id="back-html">
+<header>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change color</title>
+    <style>
+        /* html{
+            background-color: red;
+        } */
+        #container-btn {
+            text-align: center;
+            margin-top: 20%;
+            
+           
+        }
+
+        .bnt {
+            width: 90px;
+            height: 57px;
+            margin: 0 10px;
+        }
+
+        #btn-blue {
+            background-color: blue;
+        }
+
+        #btn-red {
+            background-color: red;
+        }
+
+        #btn-yellow {
+            background-color: yellow;
+        }
+
+        #btn-green {
+            background-color: green;
+        }
+
+        #btn-pink {
+            background-color: pink;
+        }
+    </style>
+</header>
+
+<body>
+    <div  id="container-btn">
+        <button id="btn-blue" class="bnt ">Blue</button>
+        <button id="btn-red" class="bnt ">Red</button>
+        <button id="btn-yellow" class="bnt">Yellow</button>
+        <button  id="btn-green" class="bnt ">Green</button>
+        <button  id="btn-pink"class="bnt">Pink</button>
+    </div>
+    <script>
+        // var container = document.querySelector('.container-btn');
+        var bublue =document.getElementById('btn-blue');
+        var bured =document.getElementById('btn-red');
+        var buyellow =document.getElementById('btn-yellow');
+        var bugreen =document.getElementById('btn-green');
+        var bupink =document.getElementById('btn-pink');
+        bublue.onclick = function () {
+            document.getElementById("back-html").style.backgroundColor = "blue";
+          
+        }
+        bured.onclick = function () {
+            document.getElementById("back-html").style.backgroundColor = "red";
+          
+        }
+
+        buyellow.onclick = function () {
+            document.getElementById("back-html").style.backgroundColor = "yellow";
+          
+        }
+
+        bugreen.onclick = function () {
+            document.getElementById("back-html").style.backgroundColor = "green";
+          
+        }
+
+        bupink.onclick = function () {
+            document.getElementById("back-html").style.backgroundColor = "pink";
+          
+        }
+
+
+    </script>
+
+</body>
+
+</html>

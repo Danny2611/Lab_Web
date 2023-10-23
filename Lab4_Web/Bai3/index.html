@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lời Chào Ngẫu Nhiên</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        #randomGreeting {
+            font-size: 24px;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lời Chào Ngẫu Nhiên</h1>
+    <div id="randomGreeting"></div>
+
+    <script>
+       
+        var greetings = [
+            "Chào bạn!",
+            "Xin chào!",
+            "Hello!",
+            "Chào mừng bạn đến với trang web!",
+        ];
+
+        
+        var randomIndex = Math.floor(Math.random() * greetings.length);
+        var randomGreeting = greetings[randomIndex];
+
+        
+        var greetingElement = document.getElementById("randomGreeting");
+        greetingElement.textContent = randomGreeting;
+    </script>
+</body>
+</html>

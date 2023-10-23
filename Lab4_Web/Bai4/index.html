@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tính số lần xuất hiện của B trong A</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tính số lần xuất hiện của B trong A</h1>
+    <label for="textA">Nhập đoạn văn (A):</label><br>
+    <textarea id="textA" rows="5" cols="50"></textarea><br>
+    <label for="textB">Nhập dòng cần tìm (B):</label><br>
+    <input type="text" id="textB"><br>
+    <button onclick="tinhSoLanXuatHien()">Tính</button>
+    <p id="result"></p>
+
+    <script>
+        function tinhSoLanXuatHien() {
+            var textA = document.getElementById("textA").value;
+            var textB = document.getElementById("textB").value;
+            var resultElement = document.getElementById("result");
+
+            if (textA && textB) {
+                var count = (textA.match(new RegExp(textB, "g")) || []).length;
+                resultElement.innerHTML = "Số lần xuất hiện của '" + textB + "' trong đoạn văn (A) là: " + count;
+            } else {
+                resultElement.innerHTML = "Vui lòng nhập cả đoạn văn (A) và dòng cần tìm (B).";
+            }
+        }
+    </script>
+</body>
+</html>
